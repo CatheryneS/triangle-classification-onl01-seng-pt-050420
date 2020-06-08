@@ -19,9 +19,7 @@ class Triangle
   end
   
   def check_triangle
-    raise TriangleError if [@side_a, @side_b, @side_c].min <= 0
-      rescue TriangleError => error 
-        puts error.message
+   
   end
   
   class TriangleError < StandardError
