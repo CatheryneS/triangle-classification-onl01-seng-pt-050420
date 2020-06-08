@@ -11,7 +11,7 @@ class Triangle
     sides = [side_a, side_b, side_c]
     ineq = [side_a+side_b > side_c, side_a + side_c > side_b, side_b +side_c > side_a]
     
-    if sides.min <= 0 || ineq.include
+    if sides.min <= 0 || ineq.include?(false)
       raise TriangleError
     end
       if @side_a == @side_b && @side_a == @side_c 
