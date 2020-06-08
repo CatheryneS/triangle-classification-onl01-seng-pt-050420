@@ -8,7 +8,6 @@ class Triangle
   end
   
   def kind 
-    check_triangle
       if @side_a == @side_b && @side_a == @side_c 
         :equilateral
       elsif @side_a == @side_b || @side_a == @side_c || @side_b == @side_c
@@ -17,10 +16,7 @@ class Triangle
         :scalene
       end
   end
-  
-  def check_triangle
-    @side_a + @side_b + @side_c
-  end
+
   
   class TriangleError < StandardError
     def message
