@@ -9,18 +9,19 @@ class Triangle
   
   def kind 
     sides = [side_a, side_b, side_c]
-    ineq = [side_a+side_b > side_c, side_a + side_c > side_b, side_b + side_c > side_a]
+    true_triangle = [side_a+side_b > side_c, side_a + side_c > side_b, side_b + side_c > side_a]
     
-    if sides.min <= 0 || ineq.include?(false)
+    if sides.min <= 0 || true_triangle.include?(false)
       raise TriangleError 
     end
-      if @side_a == @side_b && @side_a == @side_c 
-        :equilateral
-      elsif @side_a == @side_b || @side_a == @side_c || @side_b == @side_c
-        :isosceles
-      else
-        :scalene
-      end
+    
+    if @side_a == @side_b && @side_a == @side_c 
+      :equilateral
+    elsif @side_a == @side_b || @side_a == @side_c || @side_b == @side_c
+      :isosceles
+    else
+      :scalene
+    end
   end
 
   
