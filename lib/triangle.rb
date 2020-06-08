@@ -19,7 +19,7 @@ class Triangle
   end
   
   def check_triangle
-    check = 
+    triangle = (side_a
     if check == true 
       begin 
         raise TriangleError
