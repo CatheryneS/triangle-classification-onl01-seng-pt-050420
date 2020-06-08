@@ -11,7 +11,7 @@ class Triangle
     sides = [side_a, side_b, side_c]
     true_triangle = [side_a+side_b > side_c, side_a + side_c > side_b, side_b + side_c > side_a]
     
-    if sides.min <= 0 || true_triangle.include?(false)
+    if sides.min <= 0 || true_triangle == false
       raise TriangleError 
     end
     
