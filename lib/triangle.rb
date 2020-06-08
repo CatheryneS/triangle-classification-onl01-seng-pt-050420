@@ -9,7 +9,7 @@ class Triangle
   
   def kind 
     if @side_a == @side_b == @side_c
-      puts :equilateral
+        :equilateral
     end
   end
   
