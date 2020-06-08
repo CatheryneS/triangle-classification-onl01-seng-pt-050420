@@ -12,11 +12,7 @@ class Triangle
     ineq = [side_a+side_b > side_c, side_a + side_c > side_b, side_b + side_c > side_a]
     
     if sides.min <= 0 || ineq.include?(false)
-      begin
       raise TriangleError 
-      rescue TriangleError => error 
-        puts error.message
-      end
     end
       if @side_a == @side_b && @side_a == @side_c 
         :equilateral
