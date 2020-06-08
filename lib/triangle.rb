@@ -7,7 +7,9 @@ class Triangle
       @side_c = side_c
   end
   
-
+  def kind 
+    
+  end
   
   class TriangleError < StandardError
     def message
