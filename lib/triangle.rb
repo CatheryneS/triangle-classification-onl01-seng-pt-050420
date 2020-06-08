@@ -8,6 +8,7 @@ class Triangle
   end
   
   def kind 
+    check_triangle
       if @side_a == @side_b && @side_a == @side_c 
         :equilateral
       elsif @side_a == @side_b || @side_a == @side_c || @side_b == @side_c
@@ -17,6 +18,11 @@ class Triangle
       end
   end
   
+  def check_triangle
+    if @side_a <= 0.0 || @side_b <= 0.0 || @side_c <= 0.0
+      
+      
+  end
   class TriangleError < StandardError
     def message
       "Length must be greater than zero."
