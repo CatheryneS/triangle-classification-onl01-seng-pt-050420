@@ -9,7 +9,7 @@ class Triangle
   
   def kind 
     sides = [side_a, side_b, side_c]
-    
+    ineq = [side_a+side_b > side_c, side
     if sides.min <= 0 
       raise TriangleError
     end
