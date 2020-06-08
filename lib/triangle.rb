@@ -14,7 +14,8 @@ class Triangle
       rescue TriangleError => error 
           puts error.message
       end
-    elsif @side_a || @side_a
+    elsif @side_a == @side_b || @side_b == @side_c || @side_a == @side_c
+      
     end
   end
 end
