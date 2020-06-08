@@ -19,16 +19,12 @@ class Triangle
   end
   
   def check_triangle
-    triangle = [(side_a + side_b > side_c), (side_a + side_c > side_b),
-      (side_b + side_c > side_a)]
-    [side_a, side_b, side_c].each do |side|
-      triangle << false if side <= 0 
-    raise TriangleError if triangle.include?(false)
+    
   end
   
-  #class TriangleError < StandardError
-   # def message
-    #  "Length must be greater than zero."
-  #  end
-#  end
+  class TriangleError < StandardError
+    def message
+      "Length must be greater than zero."
+    end
+  end
 end
