@@ -19,7 +19,7 @@ class Triangle
   end
   
   def check_triangle
-    if @side_a <= 0.0 || @side_b <= 0.0 || @side_c <= 0.0
+    if @side_a <= 0 || @side_b <= 0 || @side_c <= 0
       begin 
         raise TriangleError
       rescue TriangleError => error 
