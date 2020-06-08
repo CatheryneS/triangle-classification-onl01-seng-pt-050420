@@ -13,9 +13,9 @@ class Triangle
     end
   end
   
-  class TriangleError < StandardError
-    def message
+  #class TriangleError < StandardError
+   # def message
       "Length must be greater than zero."
-    end
-  end
+    #end
+  #end
 end
