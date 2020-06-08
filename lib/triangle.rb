@@ -23,7 +23,7 @@ class Triangle
   
   class TriangleError < StandardError
     def message
-      
+      "Length must be "
     end
   end
 end
