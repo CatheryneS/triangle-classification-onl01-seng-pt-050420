@@ -16,8 +16,12 @@ class Triangle
       end
     elsif @side_a == @side_b || @side_b == @side_c || @side_a == @side_c
       @equilateral
-    elsif 
+    elsif @side_a == 
       
     end
+  end
+  
+  class TriangleError < StandardError
+    
   end
 end
