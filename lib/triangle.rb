@@ -15,6 +15,8 @@ class Triangle
           puts error.message
       end
     elsif @side_a == @side_b || @side_b == @side_c || @side_a == @side_c
+      @equilateral
+    elsif 
       
     end
   end
