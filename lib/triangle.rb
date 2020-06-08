@@ -8,7 +8,7 @@ class Triangle
   end
   
   def kind 
-    check_triangle
+    self.check_triangle
       if @side_a == @side_b && @side_a == @side_c 
         :equilateral
       elsif @side_a == @side_b || @side_a == @side_c || @side_b == @side_c
