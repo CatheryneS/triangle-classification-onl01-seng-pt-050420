@@ -26,9 +26,9 @@ class Triangle
     raise TriangleError if triangle.include?(false)
   end
   
-  class TriangleError < StandardError
-    def message
-      "Length must be greater than zero."
-    end
-  end
+  #class TriangleError < StandardError
+   # def message
+    #  "Length must be greater than zero."
+  #  end
+#  end
 end
