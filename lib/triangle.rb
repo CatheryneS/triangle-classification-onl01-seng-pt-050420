@@ -8,8 +8,7 @@ class Triangle
   end
   
   def kind 
-    @side_a <= 0.0 || @side_b <= 0.0 || @side_c <= 0.0 if true raise TriangleError
-    if @side_a == @side_b && @side_a == @side_c
+    if (@side_a == @side_b && @side_a == @side_c) && (@side_a > 0.0 || @side_b > 0.0 || @side_c > 0.0) 
         :equilateral
     elsif @side_a == @side_b || @side_a == @side_c || @side_b == @side_c
         :isosceles
