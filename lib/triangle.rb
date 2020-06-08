@@ -12,7 +12,7 @@ class Triangle
       begin 
         raise TriangleError
       rescue TriangleError => error 
-        
+          puts 
     end
   end
 end
