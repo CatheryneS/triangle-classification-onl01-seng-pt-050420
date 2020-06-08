@@ -22,7 +22,6 @@ class Triangle
     raise TriangleError if [@side_a, @side_b, @side_c].min <= 0
       rescue TriangleError => error 
         puts error.message
-      end
   end
   
   class TriangleError < StandardError
