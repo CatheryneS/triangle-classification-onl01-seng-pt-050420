@@ -20,9 +20,14 @@ class Triangle
   
   def check_triangle
     if @side_a <= 0.0 || @side_b <= 0.0 || @side_c <= 0.0
-      
-      
+      begin 
+        raise TriangleError
+      rescue TriangleError => error 
+        puts error.message
+      end
+    end
   end
+  
   class TriangleError < StandardError
     def message
       "Length must be greater than zero."
