@@ -12,8 +12,6 @@ class Triangle
     
     if sides.min <= 0 
       raise TriangleError
-      rescue TriangleError => error 
-        puts error.message
     end
       if @side_a == @side_b && @side_a == @side_c 
         :equilateral
