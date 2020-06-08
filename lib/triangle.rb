@@ -19,7 +19,7 @@ class Triangle
   end
   
   def check_triangle
-    
+    @side_a + @side_b + @side_c
   end
   
   class TriangleError < StandardError
